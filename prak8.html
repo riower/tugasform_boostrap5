@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Form Pendaftaran</title>
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .form-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: auto;
+      }
+      .form-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="form-container">
+        <div class="form-title">Form Pendaftaran</div>
+        <form>
+          <!-- Baris pertama: Nama, Marga, Alamat -->
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" placeholder="Nama">
+            </div>
+            <div class="col-md-4">
+              <label for="marga" class="form-label">Marga</label>
+              <input type="text" class="form-control" id="marga" placeholder="Marga">
+            </div>
+            <div class="col-md-4">
+              <label for="alamat" class="form-label">Alamat</label>
+              <input type="text" class="form-control" id="alamat" placeholder="Alamat">
+            </div>
+          </div>
+          
+          <!-- Baris kedua: NIM, Hobi -->
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="nim" class="form-label">NIM</label>
+              <input type="text" class="form-control" id="nim" placeholder="NIM">
+            </div>
+            <div class="col-md-4">
+              <label for="hobi" class="form-label">Hobi</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobi1" value="Bermain Bulutangkis">
+                <label class="form-check-label" for="hobi1">Bermain Bulutangkis</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobi2" value="Membaca">
+                <label class="form-check-label" for="hobi2">Membaca</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobi3" value="Menulis">
+                <label class="form-check-label" for="hobi3">Menulis</label>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Baris ketiga: Jenis Kelamin, Asal Sekolah -->
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="jk" class="form-label">Jenis Kelamin</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="jk" id="jk1" value="Laki-laki">
+                  <label class="form-check-label" for="jk1">Laki-laki</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="jk" id="jk2" value="Perempuan">
+                  <label class="form-check-label" for="jk2">Perempuan</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="asalSekolah" class="form-label">Asal Sekolah</label>
+              <input type="text" class="form-control" id="asalSekolah" placeholder="Asal Sekolah">
+            </div>
+          </div>
+          
+          <!-- Baris keempat: TTL, Email -->
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="ttl" class="form-label">TTL</label>
+              <input type="date" class="form-control" id="ttl">
+            </div>
+            <div class="col-md-4">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+          
+          <!-- Baris kelima: Jurusan yang dipilih -->
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="jurusan" class="form-label">Jurusan Dipilih</label>
+              <select class="form-select" id="jurusan">
+                <option selected>Pilih Jurusan</option>
+                <option value="1">Manajemen Informatika</option>
+                <option value="4">Agro Industri</option>
+                <option value="5">Teknik Sipil</option>
+                <option value="6">Teknik Listrik</option>
+                <option value="7">Rekayasa Jalan dan Jembatan</option>
+              </select>
+            </div>
+          </div>
+          
+          <!-- Tombol Submit -->
+          <div class="row mb-3">
+            <div class="col text-center">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
